@@ -1,0 +1,10 @@
+необходимые cache variables для передачи в cmake
+
+CMAKE_PREFIX_PATH - корневая папка Qt
+CMAKE_BUILD_TYPE - Debug/Release
+
+Пример команд для сборки и установки:
+
+cmake -S <source dir> -B <build dir> -DCMAKE_PREFIX_PATH=<Qt base dir> -DFLATBUFFERS_DIR=<flatbuffers base dir> -DCMAKE_BUILD_TYPE=Release
+
+cmake --build <build dir> --config Release

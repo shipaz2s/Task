@@ -1,0 +1,41 @@
+{
+	"version": 6,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 23,
+		"patch": 0
+	},
+	"include": [
+		"D:/Development/CMakePresets/qt6.2-msvc-x64.json"
+	],
+	"configurePresets": [
+		{
+			"name": "debug",
+			"displayName": "Task MSVC x64 Debug Preset",
+			"description": "Debug preset for task project",
+			"inherits": "qt6-msvc-x64-debug"
+		},
+		{
+			"name": "release",
+			"displayName": "Task MSVC x64 Release Preset",
+			"description": "Release preset for task project",
+			"inherits": "qt6-msvc-x64-release"
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "debug",
+			"description": "",
+			"displayName": "Task MSVC x86 Debug",
+			"configurePreset": "debug",
+			"inherits": "qt6-msvc-x64-debug"
+		},
+		{
+			"name": "release",
+			"description": "",
+			"displayName": "Task MSVC x86 Release",
+			"configurePreset": "release",
+			"inherits": "qt6-msvc-x64-release"
+		}
+	]
+}
